@@ -52,30 +52,18 @@ linters-settings:
 linters:
   enable-all: true
   disable:
-    - deadcode # deprecated
-    - exhaustivestruct # deprecated
-    - golint # deprecated
-    - ifshort # deprecated
-    - interfacer # deprecated
-    - maligned # deprecated
-    - nosnakecase # deprecated
-    - scopelint # deprecated
-    - scopelint # deprecated
-    - structcheck # deprecated
-    - varcheck # deprecated
-    - execinquery # not relevant (SQL)
     - rowserrcheck # not relevant (SQL)
     - sqlclosecheck # not relevant (SQL)
     - cyclop # duplicate of gocyclo
     - dupl
     - exhaustive
     - exhaustruct
+    - exportloopref
     - forbidigo
     - gochecknoglobals
     - gochecknoinits
     - err113
     - mnd
-    - gomnd
     - gosec
     - lll
     - nilnil

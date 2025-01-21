@@ -159,7 +159,7 @@ func echoHandler(w http.ResponseWriter, r *http.Request) {
 
 func printBinary(s []byte) {
 	fmt.Printf("Received b:")
-	for n := 0; n < len(s); n++ {
+	for n := range s {
 		fmt.Printf("%d,", s[n])
 	}
 	fmt.Printf("\n")
